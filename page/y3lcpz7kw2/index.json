@@ -1,0 +1,40 @@
+{
+  "id": "y3lcpz7kw2",
+  "name": {
+    "tr": "Sıkça sorulanlar",
+    "en": "FAQ",
+    "ar": "الأسئلة الشائعة"
+  },
+  "description": {
+    "tr": "Merak edilenler ve kısa yanıtlar.",
+    "en": "Common questions and short answers.",
+    "ar": "أسئلة متكررة وإجابات موجزة."
+  },
+  "keyword": {
+    "tr": "sss, soru cevap",
+    "en": "faq, questions",
+    "ar": "أسئلة وأجوبة"
+  },
+  "path": "sorular",
+  "icon": "help",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "xk1h3b",
+      "89u2gm"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Sıkça sorulanlar",
+    "en": "FAQ",
+    "ar": "الأسئلة الشائعة"
+  },
+  "date": "2026-11-05T18:58:39.654Z",
+  "update": "2026-11-05T23:44:42.031Z"
+}

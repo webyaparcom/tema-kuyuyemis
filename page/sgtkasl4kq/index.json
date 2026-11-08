@@ -1,0 +1,40 @@
+{
+  "id": "sgtkasl4kq",
+  "name": {
+    "tr": "Hizmetlerimiz",
+    "en": "Our services",
+    "ar": "خدماتنا"
+  },
+  "description": {
+    "tr": "Ateşten soğana, soğandan tabağa.",
+    "en": "From fire to onion, from onion to plate.",
+    "ar": "من الحطب إلى البصل، ومن البصل إلى الطبق."
+  },
+  "keyword": {
+    "tr": "Mutfak",
+    "en": "The kitchen",
+    "ar": "المطبخ"
+  },
+  "path": "hizmetler",
+  "icon": "work",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "m2ae1e",
+      "89u2gm"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Hizmetlerimiz",
+    "en": "Our services",
+    "ar": "خدماتنا"
+  },
+  "date": "2026-11-05T18:58:39.642Z",
+  "update": "2026-11-05T23:44:42.022Z"
+}

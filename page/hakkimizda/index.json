@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Hakkımızda",
+    "en": "About us",
+    "ar": "من نحن"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "4io3gp",
+      "1dt2e8"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Tuzlu hamur ve şerbet; görseller temsilîdir.",
+    "en": "Savory dough and syrup; images are representative.",
+    "ar": "عجن مملح وحلويات؛ الصور تمثيلية."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Hakkımızda",
+    "en": "About us",
+    "ar": "من نحن"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-05T23:44:42.025Z",
+  "date": "2026-10-30"
+}
