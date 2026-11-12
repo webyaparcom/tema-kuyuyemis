@@ -8,9 +8,9 @@
         "ar": "خدماتنا"
       },
       "description": {
-        "tr": "Ateşten soğana, soğandan tabağa.",
-        "en": "From fire to onion, from onion to plate.",
-        "ar": "من الحطب إلى البصل، ومن البصل إلى الطبق."
+        "tr": "Fırından ve kavurma ocağından, taze taze.",
+        "en": "Fresh from the oven and the roaster.",
+        "ar": "طازج من الفرن ومن محمصة المكسرات."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -49,9 +49,9 @@
       },
       "pathnext": "",
       "description": {
-        "tr": "Tuzlu hamur ve şerbet; görseller temsilîdir.",
-        "en": "Savory dough and syrup; images are representative.",
-        "ar": "عجن مملح وحلويات؛ الصور تمثيلية."
+        "tr": "Fırın ve kuruyemiş; görseller temsilîdir.",
+        "en": "Bakery and nuts; images are representative.",
+        "ar": "مخبز ومكسرات؛ الصور تمثيلية."
       }
     },
     {

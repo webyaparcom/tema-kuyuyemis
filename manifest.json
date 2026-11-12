@@ -1,7 +1,7 @@
 {
   "name": "Taze Ekmek",
   "short_name": "Taze Ekmek",
-  "description": "Tuzlu hamur ve şerbet; görseller temsilîdir.",
+  "description": "Fırın ekmeği, kuruyemiş, Antep fıstığı ve baklava; görseller temsilîdir.",
   "start_url": "/tr/",
   "scope": "/",
   "display": "standalone",
