@@ -30,6 +30,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "version": "1.0.0",
@@ -766,7 +772,12 @@
         "social_media": false,
         "logo_maxh": "60px",
         "logo_plate": false,
-        "contact_line": "auto"
+        "contact_line": "auto",
+        "logoDark": "",
+        "duzen": "",
+        "slogan": "",
+        "ikinciSutun": "",
+        "iletisimNot": ""
       },
       "version": "1.0.0",
       "icon": "widgets",
@@ -1478,9 +1489,9 @@
         "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "border": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "cta": {
-          "tr": "Teklif al",
-          "en": "Get a quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Sipariş iste",
+          "en": "Order",
+          "ar": "اطلب الآن"
         },
         "cta_url": "teklif-al"
       },
@@ -1522,7 +1533,7 @@
         "hiza": "orta",
         "yukseklik": 82,
         "max": "1200px",
-        "img": "restoran-menu-baklava.webp",
+        "img": "gida-urun-fistik-2.webp",
         "video": "",
         "poster": "",
         "alt": "Taze Ekmek",
@@ -1533,30 +1544,30 @@
         "bg": "var(--mx-site-bg, #ffffff)",
         "radius": "16px",
         "eyebrow": {
-          "tr": "Sabah taze",
-          "en": "Fresh in the morning",
-          "ar": "طازج في الصباح"
+          "tr": "Fırın & kuruyemiş",
+          "en": "Bakery & nuts",
+          "ar": "مخبز ومكسرات"
         },
         "title": {
-          "tr": "Fırından soğumadan",
-          "en": "From the oven before it cools",
-          "ar": "من الفرن قبل أن يبرد"
+          "tr": "Taze ekmek, taze kuruyemiş",
+          "en": "Fresh bread, fresh nuts",
+          "ar": "خبز طازج ومكسرات طازجة"
         },
         "metin": {
-          "tr": "Taze Ekmek, ekmek ve tatlı sunar. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Taze serves bread and sweets. Images are representative and text is fictional.",
-          "ar": "يقدم طازجة خبز وحلويات. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Taze Ekmek; sabah fırınından ekmek ve pide, günlük kavrulan kuruyemiş ve Antep fıstığı sunar. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Taze Ekmek offers bread and pide from the morning oven, daily-roasted nuts and Antep pistachios. Images are representative and text is fictional.",
+          "ar": "Taze Ekmek يقدّم خبزًا وبيدا من فرن الصباح ومكسرات محمّصة يوميًا وفستقًا حلبيًا. الصور تمثيلية والنصوص افتراضية."
         },
         "cta1": {
-          "tr": "Reçete",
-          "en": "Recipe",
-          "ar": "وصفة"
+          "tr": "Ürün çeşitleri",
+          "en": "Our range",
+          "ar": "منتجاتنا"
         },
         "cta1_url": "hizmetler",
         "cta2": {
-          "tr": "Çeşit seç",
-          "en": "Pick a treat",
-          "ar": "اختر حلوى"
+          "tr": "Sipariş iste",
+          "en": "Request an order",
+          "ar": "اطلب طلبًا"
         },
         "cta2_url": "teklif-al",
         "scroll_label": {
@@ -1601,9 +1612,9 @@
         "radius": "16px",
         "sure": 1000,
         "title": {
-          "tr": "Ne sunuyoruz?",
-          "en": "What do we serve?",
-          "ar": "ماذا نقدم؟"
+          "tr": "Rakamlarla fırın ve tezgâh",
+          "en": "The bakery and counter in numbers",
+          "ar": "المخبز والطاولة بالأرقام"
         },
         "description": {
           "tr": "Kurgusal demo verileri.",
@@ -1613,13 +1624,13 @@
       },
       "data": [
         {
-          "deger": 12,
+          "deger": 40,
           "sonek": "",
-          "ikon": "restaurant",
+          "ikon": "eco",
           "etiket": {
-            "tr": "İsim",
-            "en": "Names",
-            "ar": "أسماء"
+            "tr": "Kuruyemiş çeşidi",
+            "en": "Nut and snack varieties",
+            "ar": "نوع مكسرات"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1628,28 +1639,28 @@
           }
         },
         {
-          "deger": 120,
+          "deger": 6,
+          "sonek": "",
+          "ikon": "bakery_dining",
+          "etiket": {
+            "tr": "Günlük fırın turu",
+            "en": "Oven batches a day",
+            "ar": "دفعة خبز يوميًا"
+          },
+          "aciklama": {
+            "tr": "Kurgusal demo değeri",
+            "en": "Fictional demo figure",
+            "ar": "قيمة تجريبية"
+          }
+        },
+        {
+          "deger": 100,
           "sonek": "%",
           "ikon": "local_fire_department",
           "etiket": {
-            "tr": "Ateşte pişirilen",
-            "en": "Cooked on fire",
-            "ar": "المشوية على النار"
-          },
-          "aciklama": {
-            "tr": "Kurgusal demo değeri",
-            "en": "Fictional demo figure",
-            "ar": "قيمة تجريبية"
-          }
-        },
-        {
-          "deger": 45,
-          "sonek": " dk",
-          "ikon": "schedule",
-          "etiket": {
-            "tr": "Hazırlık süresi",
-            "en": "Preparation time",
-            "ar": "زمن التجهيز"
+            "tr": "Günlük kavrulan kuruyemiş",
+            "en": "Nuts roasted daily",
+            "ar": "مكسرات محمّصة يوميًا"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1662,9 +1673,9 @@
           "sonek": "",
           "ikon": "groups",
           "etiket": {
-            "tr": "Çalışan",
-            "en": "Staff",
-            "ar": "طاقم"
+            "tr": "Ekip",
+            "en": "Team members",
+            "ar": "أفراد الفريق"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1695,98 +1706,98 @@
         "badgebg": "#2E6BFF",
         "badgecolor": "#ffffff",
         "badge": {
-          "tr": "Mutfak",
-          "en": "The kitchen",
-          "ar": "المطبخ"
+          "tr": "Tezgâh",
+          "en": "The counter",
+          "ar": "الطاولة"
         },
         "title": {
-          "tr": "Ne sunuyoruz?",
-          "en": "What do we serve?",
-          "ar": "ماذا نقدم؟"
+          "tr": "Tezgâhta neler var?",
+          "en": "What is on the counter?",
+          "ar": "ماذا على الطاولة؟"
         },
         "description": {
-          "tr": "Ateşten soğana, soğandan tabağa.",
-          "en": "From fire to onion, from onion to plate.",
-          "ar": "من الحطب إلى البصل، ومن البصل إلى الطبق."
+          "tr": "Fırından ve kavurma ocağından, taze taze.",
+          "en": "Fresh from the oven and the roaster.",
+          "ar": "طازج من الفرن ومن محمصة المكسرات."
         }
       },
       "data": [
         {
-          "icon": "local_fire_department",
+          "icon": "eco",
           "name": {
-            "tr": "Sıcak servis",
-            "en": "Hot service",
-            "ar": "خدمة ساخنة"
+            "tr": "Antep fıstığı ve kuruyemiş",
+            "en": "Pistachios and nuts",
+            "ar": "الفستق الحلبي والمكسرات"
           },
           "description": {
-            "tr": "Odun ateşinde ızgara; piştiğinizde servis.",
-            "en": "Grilled over wood fire; served when done.",
-            "ar": "مشوية على نار الحطب؛ تُقدَّم عند جاهزيتها."
+            "tr": "Fıstık, fındık, badem ve çerez; tartılarak satılır.",
+            "en": "Pistachios, hazelnuts, almonds and snacks, sold by weight.",
+            "ar": "فستق وبندق ولوز ومقرمشات تُباع بالوزن."
           }
         },
         {
-          "icon": "restaurant",
+          "icon": "bakery_dining",
           "name": {
-            "tr": "Ana lezzet",
-            "en": "Main dish",
-            "ar": "الطبق الرئيسي"
+            "tr": "Taze ekmek ve pide",
+            "en": "Fresh bread and pide",
+            "ar": "خبز وبيدا طازجان"
           },
           "description": {
-            "tr": "Günün ana yemeği; günlük menü değişir.",
-            "en": "The day’s main dish; the daily menu changes.",
-            "ar": "طبق اليوم الرئيسي؛ يتغير قائمة اليوم."
+            "tr": "Sabah fırınından çıkan ekmek, pide ve simit.",
+            "en": "Bread, pide and simit straight from the morning oven.",
+            "ar": "خبز وبيدا وسميت من فرن الصباح."
           }
         },
         {
-          "icon": "icecream",
+          "icon": "cake",
           "name": {
-            "tr": "Ara sıcak",
-            "en": "Starter",
-            "ar": "المقبل"
+            "tr": "Baklava ve tatlı",
+            "en": "Baklava and sweets",
+            "ar": "البقلاوة والحلويات"
           },
           "description": {
-            "tr": "Soğuk başlangıç ve salata seçenekleri.",
-            "en": "Chilled starters and salad options.",
-            "ar": "مقبلات باردة وخيارات السلطة."
+            "tr": "Fıstıklı baklava ve şerbetli tatlılar; kutu seçenekli.",
+            "en": "Pistachio baklava and syrup desserts, available in boxes.",
+            "ar": "بقلاوة بالفستق وحلويات بالقطر متوفرة في علب."
           }
         },
         {
-          "icon": "lunch_dining",
+          "icon": "shopping_basket",
           "name": {
-            "tr": "Atıştırmalık",
-            "en": "Snack",
-            "ar": "وجبة خفيفة"
+            "tr": "Kuru meyve ve lokum",
+            "en": "Dried fruit and lokum",
+            "ar": "الفواكه المجففة وراحة الحلقوم"
           },
           "description": {
-            "tr": "Sıcak içecek yanında atıştırmalık.",
-            "en": "A snack with a hot drink.",
-            "ar": "وجبة خفيفة مع مشروب ساخن."
+            "tr": "Kayısı, incir, kuru üzüm ve çeşitli lokumlar.",
+            "en": "Apricots, figs, raisins and assorted lokum.",
+            "ar": "مشمش وتين وزبيب وأنواع من راحة الحلقوم."
           }
         },
         {
-          "icon": "local_bar",
+          "icon": "redeem",
           "name": {
-            "tr": "İçecek",
-            "en": "Drink",
-            "ar": "مشروب"
+            "tr": "Hediye kutusu",
+            "en": "Gift boxes",
+            "ar": "علب الهدايا"
           },
           "description": {
-            "tr": "Ev yapımı içecek ve çay seçkisi.",
-            "en": "House-made drinks and tea selection.",
-            "ar": "مشروبات منزلية واخيار الشاي."
+            "tr": "Kuruyemiş ve tatlıdan kutu ve sepet hazırlığı.",
+            "en": "Boxes and baskets of nuts and sweets prepared to order.",
+            "ar": "تجهيز علب وسلال من المكسرات والحلويات حسب الطلب."
           }
         },
         {
-          "icon": "delivery_dining",
+          "icon": "inventory_2",
           "name": {
-            "tr": "Paket servis",
-            "en": "To-go service",
-            "ar": "خدمة الطلبات الخارجية"
+            "tr": "Toptan ve paket",
+            "en": "Wholesale and packs",
+            "ar": "الجملة والعبوات"
           },
           "description": {
-            "tr": "Paket kutusu ve soğuk zincir (demo bilgi).",
-            "en": "To-go box and cold chain (demo info).",
-            "ar": "صندوق للأغراض الخارجية وسلسلة التبريد (معلومات تجريبية)."
+            "tr": "Kafe ve işletmeler için paketli toptan satış (demo).",
+            "en": "Packed wholesale for cafés and businesses (demo).",
+            "ar": "بيع بالجملة معبّأ للمقاهي والأعمال (تجريبي)."
           }
         }
       ],
@@ -1814,19 +1825,19 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "badge": {
-          "tr": "Nasıl çalışırız?",
-          "en": "How we work",
-          "ar": "كيف نعمل؟"
+          "tr": "Tezgâhtan",
+          "en": "From the counter",
+          "ar": "من الطاولة"
         },
         "title": {
-          "tr": "Dört adımda süreç",
-          "en": "Process in four steps",
-          "ar": "العملية في أربع خطوات"
+          "tr": "Dört adımda sofranıza",
+          "en": "To your table in four steps",
+          "ar": "إلى مائدتك في أربع خطوات"
         },
         "description": {
-          "tr": "İlk görüşmeden teslimata aynı akış.",
-          "en": "The same flow, from first meeting to handover.",
-          "ar": "نفس التيار من أول لقاء إلى التسليم."
+          "tr": "Seçimden teslime.",
+          "en": "From choosing to handover.",
+          "ar": "من الاختيار إلى التسليم."
         },
         "accentText": "#ffffff",
         "cardbg": "var(--mx-site-surface, #ffffff)",
@@ -1836,14 +1847,14 @@
         {
           "year": "01",
           "title": {
-            "tr": "Karşılama",
-            "en": "Greeting",
-            "ar": "الترحيب"
+            "tr": "Seçim",
+            "en": "Choose",
+            "ar": "الاختيار"
           },
           "text": {
-            "tr": "Masa ve tercih notu alınır.",
-            "en": "The table and preference note are taken.",
-            "ar": "يُؤخذ جدول وملاحظة التفضيل."
+            "tr": "Çeşit ve gramaj seçilir.",
+            "en": "Pick the variety and weight.",
+            "ar": "يُختار النوع والوزن."
           }
         },
         {
@@ -1851,38 +1862,38 @@
           "title": {
             "tr": "Hazırlık",
             "en": "Preparation",
-            "ar": "التجهيز"
+            "ar": "التحضير"
           },
           "text": {
-            "tr": "Ateş ve malzeme saati başlar.",
-            "en": "Fire and ingredient time begin.",
-            "ar": "تبدأ نار ومال المواد."
+            "tr": "Kuruyemiş kavrulur, ekmek fırına verilir.",
+            "en": "Nuts are roasted and bread goes into the oven.",
+            "ar": "تُحمَّص المكسرات ويُخبز الخبز."
           }
         },
         {
           "year": "03",
           "title": {
-            "tr": "Sunum",
-            "en": "Serving",
-            "ar": "الكشف والطبخ"
+            "tr": "Paketleme",
+            "en": "Packing",
+            "ar": "التغليف"
           },
           "text": {
-            "tr": "Yemek sıcak servis edilir.",
-            "en": "The dish is served hot.",
-            "ar": "يُقدَّم الطبق ساخناً."
+            "tr": "Tartılır, paketlenir ya da hediye kutusuna konur.",
+            "en": "Weighed, packed or placed in a gift box.",
+            "ar": "يُوزن ويُعبّأ أو يوضع في علبة هدية."
           }
         },
         {
           "year": "04",
           "title": {
-            "tr": "Tatlı",
-            "en": "Dessert",
-            "ar": "الحلا"
+            "tr": "Teslim",
+            "en": "Handover",
+            "ar": "التسليم"
           },
           "text": {
-            "tr": "Ağız tadına uygun tatlı ve içecek.",
-            "en": "A dessert and drink to your palate.",
-            "ar": "حلوة ومشروب يتناسب مع مذاقك."
+            "tr": "Mağazadan teslim ya da kargo.",
+            "en": "Collection in store or shipping.",
+            "ar": "استلام من المتجر أو شحن."
           }
         }
       ],
@@ -1916,9 +1927,9 @@
           "ar": "فريقنا"
         },
         "title": {
-          "tr": "Sizi karşılayan ekip",
-          "en": "The team that welcomes you",
-          "ar": "الفريق الذي يستقبلك"
+          "tr": "Sizi tezgâhta karşılayanlar",
+          "en": "The people who greet you at the counter",
+          "ar": "من يستقبلونك عند الطاولة"
         },
         "description": {
           "tr": "Kurgusal demo profiller.",
@@ -1932,42 +1943,42 @@
         {
           "name": "Ayşe Demir",
           "role": {
-            "tr": "Şef",
-            "en": "Chef",
-            "ar": "شيف"
+            "tr": "Fırın ustası",
+            "en": "Master baker",
+            "ar": "رئيسة الخبّازين"
           },
           "bio": {
-            "tr": "12 yıl sıcak mutfak.",
-            "en": "12 years of hot kitchen.",
-            "ar": "١٢ عامًا في المَطبخ الساخن."
+            "tr": "12 yıl ekmek ve hamur işi.",
+            "en": "12 years of bread and pastry.",
+            "ar": "12 عامًا في الخبز والعجائن."
           },
           "img": ""
         },
         {
           "name": "Burak Öztürk",
           "role": {
-            "tr": "Ateş başı",
-            "en": "Grill master",
-            "ar": "على النار"
+            "tr": "Kavurma sorumlusu",
+            "en": "Roasting lead",
+            "ar": "مسؤول التحميص"
           },
           "bio": {
-            "tr": "6 yıl ızgara.",
-            "en": "6 years of grilling.",
-            "ar": "٦ سنوات على المشواة."
+            "tr": "6 yıl kuruyemiş kavurma.",
+            "en": "6 years of nut roasting.",
+            "ar": "6 سنوات في تحميص المكسرات."
           },
           "img": ""
         },
         {
           "name": "Seda Kaya",
           "role": {
-            "tr": "Servis başı",
-            "en": "Head of service",
-            "ar": "رئیسة الخدمة"
+            "tr": "Tezgâh sorumlusu",
+            "en": "Counter manager",
+            "ar": "مسؤولة الطاولة"
           },
           "bio": {
-            "tr": "5 yıl karşılama.",
-            "en": "5 years of reception.",
-            "ar": "٥ سنوات في الاستقبال."
+            "tr": "5 yıl satış ve paketleme.",
+            "en": "5 years of sales and packing.",
+            "ar": "5 سنوات في البيع والتغليف."
           },
           "img": ""
         }
@@ -1998,14 +2009,14 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "starcolor": "#f59e0b",
         "badge": {
-          "tr": "Müşteri yorumları",
-          "en": "Customer reviews",
-          "ar": "تقييمات العملاء"
+          "tr": "Yorumlar",
+          "en": "Reviews",
+          "ar": "التقييمات"
         },
         "title": {
           "tr": "Müşterilerimiz ne diyor?",
           "en": "What our customers say",
-          "ar": "ماذا يقول عملاؤنا؟"
+          "ar": "ماذا يقول زبائننا؟"
         },
         "description": {
           "tr": "Kurgusal demo yorumlar.",
@@ -2026,9 +2037,9 @@
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Sıcak geldi; porsiyon dengeli.",
-            "en": "It came hot; balanced portion.",
-            "ar": "وجاء ساخناً؛ حصة متوازنة."
+            "tr": "Ekmek sabah sıcak geldi; fıstık taze kavrulmuştu.",
+            "en": "The bread was warm in the morning and the pistachios freshly roasted.",
+            "ar": "كان الخبز دافئًا في الصباح والفستق محمّصًا طازجًا."
           }
         },
         {
@@ -2041,9 +2052,9 @@
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Sipariş zamanında; servisi hızlı.",
-            "en": "Order on time; fast service.",
-            "ar": "طلب في الوقت؛ خدمة سريعة."
+            "tr": "Hediye kutusu özenle hazırlandı.",
+            "en": "The gift box was prepared with care.",
+            "ar": "جُهّزت علبة الهدية بعناية."
           }
         },
         {
@@ -2051,14 +2062,14 @@
           "role": {
             "tr": "Aile",
             "en": "Family",
-            "ar": "أسرة"
+            "ar": "عائلة"
           },
           "rating": 4,
           "img": "",
           "text": {
-            "tr": "Menüsü sade; fiyat net.",
-            "en": "Simple menu; clear price.",
-            "ar": "قائمة بسيطة؛ سعر واضح."
+            "tr": "Çeşit çok; tartı ve fiyat net.",
+            "en": "Plenty of choice; weights and prices are clear.",
+            "ar": "تنوّع كبير؛ والوزن والسعر واضحان."
           }
         }
       ],
@@ -2103,17 +2114,17 @@
         "radius": "16px",
         "numara": true,
         "eyebrow": {
-          "tr": "Neyi iyi yaparız?",
-          "en": "What we do well",
-          "ar": "ما نتقنه؟"
+          "tr": "Tezgâhta neler var?",
+          "en": "What is on the counter?",
+          "ar": "ماذا على الطاولة؟"
         },
         "title": {
-          "tr": "Ne sunuyoruz?",
-          "en": "What do we serve?",
-          "ar": "ماذا نقدم؟"
+          "tr": "Fıstıktan ekmeğe",
+          "en": "From pistachios to bread",
+          "ar": "من الفستق إلى الخبز"
         },
         "description": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
+          "tr": "Görseller temsilîdir; bu bir kurulum demosudur.",
           "en": "Images are representative; this is a setup demo.",
           "ar": "الصور تمثيلية وهذا عرض تجريبي."
         },
@@ -2126,16 +2137,16 @@
       "data": [
         {
           "baslik": {
-            "tr": "Sıcak servis",
-            "en": "Hot service",
-            "ar": "خدمة ساخنة"
+            "tr": "Antep fıstığı ve kuruyemiş",
+            "en": "Pistachios and nuts",
+            "ar": "الفستق الحلبي والمكسرات"
           },
           "metin": {
-            "tr": "Odun ateşinde ızgara; piştiğinizde servis.",
-            "en": "Grilled over wood fire; served when done.",
-            "ar": "مشوية على نار الحطب؛ تُقدَّم عند جاهزيتها."
+            "tr": "Fıstık, fındık, badem ve çerez; tartılarak satılır.",
+            "en": "Pistachios, hazelnuts, almonds and snacks, sold by weight.",
+            "ar": "فستق وبندق ولوز ومقرمشات تُباع بالوزن."
           },
-          "img": "restoran-menu-salata.webp",
+          "img": "gida-urun-fistik-1.webp",
           "alt": {
             "tr": "Temsilî görsel",
             "en": "Representative image",
@@ -2145,16 +2156,16 @@
         },
         {
           "baslik": {
-            "tr": "Ana lezzet",
-            "en": "Main dish",
-            "ar": "الطبق الرئيسي"
+            "tr": "Taze ekmek ve pide",
+            "en": "Fresh bread and pide",
+            "ar": "خبز وبيدا طازجان"
           },
           "metin": {
-            "tr": "Günün ana yemeği; günlük menü değişir.",
-            "en": "The day’s main dish; the daily menu changes.",
-            "ar": "طبق اليوم الرئيسي؛ يتغير قائمة اليوم."
+            "tr": "Sabah fırınından çıkan ekmek, pide ve simit.",
+            "en": "Bread, pide and simit straight from the morning oven.",
+            "ar": "خبز وبيدا وسميت من فرن الصباح."
           },
-          "img": "restoran-menu-tatli.webp",
+          "img": "gida-tarif-2.webp",
           "alt": {
             "tr": "Temsilî görsel",
             "en": "Representative image",
@@ -2164,16 +2175,16 @@
         },
         {
           "baslik": {
-            "tr": "Ara sıcak",
-            "en": "Starter",
-            "ar": "المقبل"
+            "tr": "Baklava ve tatlı",
+            "en": "Baklava and sweets",
+            "ar": "البقلاوة والحلويات"
           },
           "metin": {
-            "tr": "Soğuk başlangıç ve salata seçenekleri.",
-            "en": "Chilled starters and salad options.",
-            "ar": "مقبلات باردة وخيارات السلطة."
+            "tr": "Fıstıklı baklava ve şerbetli tatlılar; kutu seçenekli.",
+            "en": "Pistachio baklava and syrup desserts, available in boxes.",
+            "ar": "بقلاوة بالفستق وحلويات بالقطر متوفرة في علب."
           },
-          "img": "restoran-mekan-1.webp",
+          "img": "gida-urun-baklava.webp",
           "alt": {
             "tr": "Temsilî görsel",
             "en": "Representative image",
@@ -2229,14 +2240,14 @@
         "radius": "16px",
         "showTitle": true,
         "title": {
-          "tr": "Birlikte çalıştığımız kuruluşlar",
-          "en": "Organisations we work with",
-          "ar": "جهات نعمل معها"
+          "tr": "Tedarikçilerimiz",
+          "en": "Our suppliers",
+          "ar": "مورّدونا"
         },
         "description": {
-          "tr": "Kurgusal iş ortağı adları; gerçek bir kuruluşa ait değildir.",
-          "en": "Fictional partner names; they do not belong to a real organisation.",
-          "ar": "أسماء شركاء افتراضية لا تعود إلى جهة حقيقية."
+          "tr": "Kurgusal tedarikçi adları; gerçek bir kuruluşa ait değildir.",
+          "en": "Fictional supplier names; they do not belong to a real organisation.",
+          "ar": "أسماء مورّدين افتراضية لا تعود إلى جهة حقيقية."
         },
         "listLabel": {
           "tr": "Referans logoları",
@@ -2246,22 +2257,22 @@
       },
       "data": [
         {
-          "name": "Demo Kahvaltı"
+          "name": "Demo Çiftlik"
         },
         {
-          "name": "Demo Çay"
+          "name": "Demo Un Fabrikası"
         },
         {
-          "name": "Demo Kahvaltı"
+          "name": "Demo Fıstık Üreticisi"
         },
         {
-          "name": "Demo İçecek"
+          "name": "Demo Kooperatif"
         },
         {
-          "name": "Demo Unlu Mamul"
+          "name": "Demo Bal"
         },
         {
-          "name": "Demo Fırın"
+          "name": "Demo Ambalaj"
         }
       ],
       "veri": {
@@ -2291,64 +2302,104 @@
           "ar": "الأسئلة الشائعة"
         },
         "title": {
-          "tr": "Sıkça sorulan sorular",
-          "en": "Frequently asked questions",
-          "ar": "الأسئلة الشائعة"
+          "tr": "Ürünler hakkında sorular",
+          "en": "Questions about our products",
+          "ar": "أسئلة حول منتجاتنا"
         },
         "description": {
-          "tr": "Merak edilenler ve kısa yanıtlar.",
-          "en": "Common questions and short answers.",
-          "ar": "أسئلة متكررة وإجابات موجزة."
+          "tr": "Kavurma, alerjen ve fiyat üzerine kısa yanıtlar.",
+          "en": "Short answers on roasting, allergens and pricing.",
+          "ar": "إجابات موجزة عن التحميص ومسببات الحساسية والأسعار."
         },
         "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
       },
       "data": [
         {
+          "question": {
+            "tr": "Kuruyemişler ne zaman kavrulur?",
+            "en": "When are the nuts roasted?",
+            "ar": "متى تُحمَّص المكسرات؟"
+          },
+          "answer": {
+            "tr": "Günlük küçük partilerde kavrulur; kavrulma günü paket üzerinde yazar (kurgusal demo bilgisi).",
+            "en": "They are roasted in small daily batches; the roasting date is printed on the pack (fictional demo information).",
+            "ar": "تُحمَّص في دفعات صغيرة يوميًا ويُكتب تاريخ التحميص على العبوة (معلومة تجريبية افتراضية)."
+          },
           "soru": {
-            "tr": "Porsiyonlar ne kadar?",
-            "en": "How large are the portions?",
-            "ar": "ما حجم الحصص?"
+            "tr": "Kuruyemişler ne zaman kavrulur?",
+            "en": "When are the nuts roasted?",
+            "ar": "متى تُحمَّص المكسرات؟"
           },
           "cevap": {
-            "tr": "Kişi sayısına göre değişir; demo metni örnek vermez.",
-            "en": "They vary by number of people; this demo text gives no example.",
-            "ar": "تتغير حسب عدد الأشخاص؛ ولا يعطي هذا النص التجريبي مثالاً."
+            "tr": "Günlük küçük partilerde kavrulur; kavrulma günü paket üzerinde yazar (kurgusal demo bilgisi).",
+            "en": "They are roasted in small daily batches; the roasting date is printed on the pack (fictional demo information).",
+            "ar": "تُحمَّص في دفعات صغيرة يوميًا ويُكتب تاريخ التحميص على العبوة (معلومة تجريبية افتراضية)."
           }
         },
         {
+          "question": {
+            "tr": "Alerjen bilgisi veriliyor mu?",
+            "en": "Is allergen information provided?",
+            "ar": "هل تتوفر معلومات عن مسببات الحساسية؟"
+          },
+          "answer": {
+            "tr": "Evet; fıstık, fındık ve gluten içeren ürünler tezgâhta ve etikette belirtilir (demo metni).",
+            "en": "Yes; products containing peanuts, hazelnuts and gluten are marked at the counter and on the label (demo text).",
+            "ar": "نعم؛ تُذكر المنتجات المحتوية على الفول السوداني والبندق والغلوتين على الطاولة وعلى الملصق (نص تجريبي)."
+          },
           "soru": {
-            "tr": "Çevrimiçi sipariş var mı?",
-            "en": "Are there online orders?",
-            "ar": "هل توجد طلبات عبر الإنترنت?"
+            "tr": "Alerjen bilgisi veriliyor mu?",
+            "en": "Is allergen information provided?",
+            "ar": "هل تتوفر معلومات عن مسببات الحساسية؟"
           },
           "cevap": {
-            "tr": "Siteden iletişim formuyla yapılır; veri saklanmaz (demo).",
-            "en": "It is done via the site’s contact form; data is not saved (demo).",
-            "ar": "يتم عبر نموذج الاتصال في الموقع؛ لا تُحفظ البيانات (تجريبي)."
+            "tr": "Evet; fıstık, fındık ve gluten içeren ürünler tezgâhta ve etikette belirtilir (demo metni).",
+            "en": "Yes; products containing peanuts, hazelnuts and gluten are marked at the counter and on the label (demo text).",
+            "ar": "نعم؛ تُذكر المنتجات المحتوية على الفول السوداني والبندق والغلوتين على الطاولة وعلى الملصق (نص تجريبي)."
           }
         },
         {
+          "question": {
+            "tr": "Sitedeki görseller ve veriler gerçek midir?",
+            "en": "Are the images and data on the site real?",
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
+          },
+          "answer": {
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
+            "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
+            "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
+          },
           "soru": {
             "tr": "Sitedeki görseller ve veriler gerçek midir?",
             "en": "Are the images and data on the site real?",
-            "ar": "هل الصور والبيانات في الموقع حقيقية?"
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
           },
           "cevap": {
-            "tr": "Hayır; bu bir kuruluma örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
             "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
             "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
           }
         },
         {
+          "question": {
+            "tr": "Fiyatlar nasıl belirlenir?",
+            "en": "How are prices determined?",
+            "ar": "كيف تُحدَّد الأسعار؟"
+          },
+          "answer": {
+            "tr": "Ürün cinsine ve gramaja göre belirlenir; güncel fiyat için bizimle iletişime geçin. Bu demoda fiyat listesi yoktur.",
+            "en": "Prices depend on the product and weight; contact us for current prices. This demo has no price list.",
+            "ar": "تعتمد الأسعار على نوع المنتج والوزن؛ تواصل معنا لمعرفة الأسعار الحالية. لا توجد قائمة أسعار في هذا العرض التجريبي."
+          },
           "soru": {
             "tr": "Fiyatlar nasıl belirlenir?",
             "en": "How are prices determined?",
-            "ar": "كيف تُحدَّد الأسعار?"
+            "ar": "كيف تُحدَّد الأسعار؟"
           },
           "cevap": {
-            "tr": "İhtiyacınıza göre teklifle belirlenir; genel bir fiyat aralığı demo metninde yer almaz.",
-            "en": "A quote based on your needs sets the price; a general range is not shown in this demo text.",
-            "ar": "يُحدَّد السعر عبر عرض سعر حسب احتياجاتك؛ ولا يُذكر نطاق عام في هذا النص التجريبي."
+            "tr": "Ürün cinsine ve gramaja göre belirlenir; güncel fiyat için bizimle iletişime geçin. Bu demoda fiyat listesi yoktur.",
+            "en": "Prices depend on the product and weight; contact us for current prices. This demo has no price list.",
+            "ar": "تعتمد الأسعار على نوع المنتج والوزن؛ تواصل معنا لمعرفة الأسعار الحالية. لا توجد قائمة أسعار في هذا العرض التجريبي."
           }
         }
       ],
@@ -2406,14 +2457,14 @@
         "errcolor": "var(--mx-color-danger, #b42318)",
         "radius": "16px",
         "title": {
-          "tr": "Teklif isteyin",
-          "en": "Request a quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Sipariş notu bırakın",
+          "en": "Leave an order note",
+          "ar": "اترك ملاحظة طلب"
         },
         "description": {
-          "tr": "Bilgilerinizi bırakın; en geç iki iş günü içinde dönüş yaparız. Bu form demodur; e-posta istemciniz açılır, veri saklanmaz.",
-          "en": "Leave your details; we reply within two business days. This form is a demo; it opens your e-mail client and stores no data.",
-          "ar": "اترك بياناتك وسنرد خلال يومي عمل. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يحفظ أي بيانات."
+          "tr": "Çeşit ve miktarı yazın; en kısa sürede dönüş yaparız. Bu form demodur; e-posta istemciniz açılır, veri saklanmaz.",
+          "en": "Tell us the variety and quantity; we reply as soon as we can. This form is a demo; it opens your e-mail client and stores no data.",
+          "ar": "اكتب النوع والكمية وسنردّ في أقرب وقت. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يتم حفظ أي بيانات."
         },
         "panelTitle": {
           "tr": "Taze Ekmek",
@@ -2421,7 +2472,7 @@
           "ar": "Taze Ekmek"
         },
         "panelText": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
+          "tr": "Görseller temsilîdir; bu bir kurulum demosudur.",
           "en": "Images are representative; this is a setup demo.",
           "ar": "الصور تمثيلية وهذا عرض تجريبي."
         },
@@ -2477,8 +2528,8 @@
         },
         "social": [],
         "formTitle": {
-          "tr": "Teklif formu",
-          "en": "Quote form",
+          "tr": "Sipariş formu",
+          "en": "Order form",
           "ar": "نموذج الطلب"
         },
         "nameLabel": {
@@ -2510,25 +2561,25 @@
           {
             "id": "a",
             "name": {
-              "tr": "Yeni talep",
-              "en": "New request",
-              "ar": "طلب جديد"
+              "tr": "Kuruyemiş siparişi",
+              "en": "Nut order",
+              "ar": "طلب مكسرات"
             }
           },
           {
             "id": "b",
             "name": {
-              "tr": "Ölçü ve keşif",
-              "en": "Measure and survey",
-              "ar": "قياس واستقصاء"
+              "tr": "Ekmek ve pide",
+              "en": "Bread and pide",
+              "ar": "خبز وبيدا"
             }
           },
           {
             "id": "c",
             "name": {
-              "tr": "Teknik soru",
-              "en": "Technical question",
-              "ar": "سؤال فني"
+              "tr": "Hediye kutusu",
+              "en": "Gift box",
+              "ar": "علبة هدية"
             }
           },
           {
@@ -2615,7 +2666,8 @@
           "tr": "Merhaba, web sitenizden yazıyorum.",
           "en": "Hello, I am writing from your website.",
           "ar": "مرحبًا، أكتب إليكم من موقعكم الإلكتروني."
-        }
+        },
+        "formAction": ""
       },
       "data": [],
       "veri": {
@@ -2639,33 +2691,33 @@
           "ar": "Taze Ekmek"
         },
         "description": {
-          "tr": "Taze Ekmek, ekmek ve tatlı sunar. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Taze serves bread and sweets. Images are representative and text is fictional.",
-          "ar": "يقدم طازجة خبز وحلويات. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Taze Ekmek; sabah fırınından ekmek ve pide, günlük kavrulan kuruyemiş, Antep fıstığı ve baklava sunan bir fırın ve kuruyemiş dükkânıdır. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Taze Ekmek is a bakery and nut shop offering bread and pide from the morning oven, daily-roasted nuts, Antep pistachios and baklava. Images are representative and text is fictional.",
+          "ar": "Taze Ekmek مخبز ومتجر مكسرات يقدّم الخبز والبيدا من فرن الصباح ومكسرات محمّصة يوميًا وفستقًا حلبيًا وبقلاوة. الصور تمثيلية والنصوص افتراضية."
         },
         "name2": {
-          "tr": "Ateş başı",
-          "en": "At the fire",
-          "ar": "عند النار"
+          "tr": "Kavurma ocağı",
+          "en": "Roasting corner",
+          "ar": "ركن التحميص"
         },
         "spot2": {
-          "tr": "Ateş ve malzeme aynı mutfakta yürür.",
-          "en": "Fire and ingredients run in the same kitchen.",
-          "ar": "تسير نار والمواد في نفس المطبخ."
+          "tr": "Kuruyemiş küçük partilerde kavrulur.",
+          "en": "Nuts are roasted in small batches.",
+          "ar": "تُحمَّص المكسرات في دفعات صغيرة."
         },
         "icon2": "local_fire_department",
         "name3": {
-          "tr": "Günün menüsü",
-          "en": "The menu of the day",
-          "ar": "قائمة اليوم"
+          "tr": "Hediye tezgâhı",
+          "en": "Gift counter",
+          "ar": "ركن الهدايا"
         },
         "spot3": {
-          "tr": "Her sabah menü yenilenir; aynı gün yazılır.",
-          "en": "The menu is renewed every morning and written on the same day.",
-          "ar": "تُجدَد القائمة كل صباح وتُكتب في نفس اليوم."
+          "tr": "Kutu ve sepetler istek üzerine hazırlanır.",
+          "en": "Boxes and baskets are prepared on request.",
+          "ar": "تُجهَّز العلب والسلال عند الطلب."
         },
-        "icon3": "schedule",
-        "img": "restoran-galeri-masa.webp",
+        "icon3": "redeem",
+        "img": "gida-hasat.webp",
         "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
@@ -2753,9 +2805,9 @@
           "ar": "اتصل بنا"
         },
         "callText": {
-          "tr": "Hafta içi 09:00 – 18:00",
-          "en": "Weekdays 09:00 – 18:00",
-          "ar": "أيام الأسبوع 09:00 – 18:00"
+          "tr": "Pzt–Paz 06:00 – 20:00",
+          "en": "Mon–Sun 06:00 – 20:00",
+          "ar": "الاثنين–الأحد 06:00 – 20:00"
         },
         "callBtn": {
           "tr": "Ara",
@@ -2783,9 +2835,9 @@
           "ar": "البريد الإلكتروني"
         },
         "mailText": {
-          "tr": "Teklif ve detaylı sorular için",
-          "en": "For quotes and detailed questions",
-          "ar": "لعروض الأسعار والأسئلة التفصيلية"
+          "tr": "Sipariş ve ürün soruları için",
+          "en": "For orders and product questions",
+          "ar": "للطلبات وأسئلة المنتجات"
         },
         "mailBtn": {
           "tr": "E-posta gönder",
@@ -2849,23 +2901,23 @@
         "title": {
           "tr": "Fırın sıcakken",
           "en": "While the oven is warm",
-          "ar": "حين الفرن دافي"
+          "ar": "والفرن ما زال دافئًا"
         },
         "text": {
-          "tr": "İki iş günü içinde dönüş yaparız. Bu demo sitede veri saklanmaz.",
-          "en": "We reply within two business days. No data is stored on this demo site.",
-          "ar": "نردّ خلال يومي عمل. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
+          "tr": "Sipariş notunuzu bırakın; en kısa sürede dönüş yaparız. Bu demo sitede veri saklanmaz.",
+          "en": "Leave your order note; we reply as soon as we can. No data is stored on this demo site.",
+          "ar": "اترك ملاحظة الطلب وسنردّ في أقرب وقت. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
         },
         "btn1Label": {
-          "tr": "Formu doldurun",
-          "en": "Fill the form",
-          "ar": "املأ النموذج"
+          "tr": "Sipariş iste",
+          "en": "Request an order",
+          "ar": "اطلب طلبًا"
         },
         "btn1Url": "teklif-al",
         "btn2Label": {
-          "tr": "Hizmetleri gör",
-          "en": "See services",
-          "ar": "شاهد الخدمات"
+          "tr": "Çeşitleri gör",
+          "en": "See the range",
+          "ar": "شاهد المنتجات"
         },
         "btn2Url": "hizmetler",
         "number": "903420230104",

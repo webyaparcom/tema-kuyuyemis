@@ -2,14 +2,14 @@
   "order": false,
   "user": false,
   "description": {
-    "tr": "Tuzlu hamur ve şerbet; görseller temsilîdir.",
-    "en": "Savory dough and syrup; images are representative.",
-    "ar": "عجن مملح وحلويات؛ الصور تمثيلية."
+    "tr": "Fırın ekmeği, kuruyemiş, Antep fıstığı ve baklava; görseller temsilîdir.",
+    "en": "Bakery bread, nuts, pistachios and baklava; images are representative.",
+    "ar": "خبز المخبز والمكسرات والفستق والبقلاوة؛ الصور تمثيلية."
   },
   "keyword": {
-    "tr": "ekmek, pide, şerbet",
-    "en": "bread, pide, syrup",
-    "ar": "خبز، بقير، شراب"
+    "tr": "fırın, ekmek, kuruyemiş, Antep fıstığı, baklava",
+    "en": "bakery, bread, nuts, pistachios, baklava",
+    "ar": "مخبز، خبز، مكسرات، فستق حلبي، بقلاوة"
   },
   "category": "Kurumsal",
   "name": "Taze Ekmek",

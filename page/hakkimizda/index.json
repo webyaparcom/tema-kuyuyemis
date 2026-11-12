@@ -21,9 +21,9 @@
   },
   "pathnext": "",
   "description": {
-    "tr": "Tuzlu hamur ve şerbet; görseller temsilîdir.",
-    "en": "Savory dough and syrup; images are representative.",
-    "ar": "عجن مملح وحلويات؛ الصور تمثيلية."
+    "tr": "Fırın ve kuruyemiş; görseller temsilîdir.",
+    "en": "Bakery and nuts; images are representative.",
+    "ar": "مخبز ومكسرات؛ الصور تمثيلية."
   },
   "spot": {
     "tr": "",
@@ -42,6 +42,6 @@
     "ar": "من نحن"
   },
   "text": {},
-  "update": "2026-11-05T23:44:42.025Z",
+  "update": "2026-11-12T07:36:24.770Z",
   "date": "2026-10-30"
 }
