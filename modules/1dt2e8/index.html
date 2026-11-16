@@ -1,139 +1,109 @@
-<section class="modulex-s2{{s2class}}" id="s2-{{id}}" data-s2-dil="{{s2dil}}" data-s2-sure="{{s2sure}}" style="{{s2vars}}">
-  <span class="modulex-s2-desen" aria-hidden="true"></span>
-  <div class="modulex-s2-wrap">
-    {{s2head}}
-    <ul class="modulex-s2-list">{{s2items}}</ul>
+<section class="modulex-sayac-sekmeli{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-sayac-sekmeli-ic">
+    {{fbbas}}
+    {{fbgovde}}
   </div>
 </section>
 
 <style>
-  /* Sayaç Şeridi (31 Eki 2026, G8-B). Zemin + yazı ÇİFT token: bgcolor = site birincil, textcolor = birincil kontrast; koyu mod paletten. */
-  .modulex-s2 {
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    padding-block: clamp(40px, 6vw, 72px);
-    padding-inline: clamp(16px, 4vw, 32px);
-    background: --bgcolor--;
-    color: --textcolor--;
-    overflow: hidden;
-  }
-  .modulex-s2 *, .modulex-s2 *::before, .modulex-s2 *::after { box-sizing: border-box; }
-  /* ham css.css `* { font-size:14px; font-weight:400 }` kalıtımı kırar → sayı/bdi/önek ebeveynden alır */
-  .modulex-s2 :where(span:not(.material-symbols-outlined), bdi, b, strong, em) { font: inherit; }
-  .modulex-s2-wrap { position: relative; z-index: 1; max-width: --max--; margin-inline: auto; }
+  /* sayac-sekmeli — Rakamlar aynı anda değil, tek tek odaklanarak gösterilir (sekme etkileşimi); her rakam kendi paneline sahiptir. */
+  .modulex-sayac-sekmeli { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-sayac-sekmeli *, .modulex-sayac-sekmeli *::before, .modulex-sayac-sekmeli *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-sayac-sekmeli :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-sayac-sekmeli :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-sayac-sekmeli :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-sayac-sekmeli :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-sayac-sekmeli img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-sayac-sekmeli) img { height: auto; }
+  .modulex-sayac-sekmeli [hidden] { display: none !important; }
+  .modulex-sayac-sekmeli :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-sayac-sekmeli :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-sayac-sekmeli-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-sayac-sekmeli-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-sayac-sekmeli--bassiz .modulex-sayac-sekmeli-bas { display: none; }
+  .modulex-sayac-sekmeli-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-sayac-sekmeli-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-sayac-sekmeli-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-sayac-sekmeli-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-sayac-sekmeli-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-sayac-sekmeli-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-sayac-sekmeli-dugme:hover { transform: translateY(-2px); }
+  .modulex-sayac-sekmeli-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-sayac-sekmeli-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-sayac-sekmeli-dugme .material-symbols-outlined { font-size: 20px; }
 
-  /* Dekoratif desen: ayrı öğe (metnin atası değil) → kontrast ölçümü zemin rengine göre yapılır */
-  .modulex-s2-desen { position: absolute; inset: 0; pointer-events: none; opacity: 0.9; }
-  .modulex-s2-desen-noktalar .modulex-s2-desen {
-    background-image: radial-gradient(color-mix(in srgb, --textcolor-- 16%, transparent) 1.5px, transparent 1.6px);
-    background-size: 22px 22px;
-  }
-  .modulex-s2-desen-cizgiler .modulex-s2-desen {
-    background-image: repeating-linear-gradient(135deg, color-mix(in srgb, --textcolor-- 10%, transparent) 0 2px, transparent 2px 18px);
-  }
-  .modulex-s2-desen-yok .modulex-s2-desen { display: none; }
-
-  .modulex-s2-head { margin-block-end: 32px; text-align: start; max-width: 60ch; }
-  .modulex-s2-title { margin: 0 0 8px; font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2.1rem); line-height: 1.2; color: --textcolor--; text-wrap: balance; }
-  .modulex-s2-desc { margin: 0; font-size: 1rem; line-height: 1.6; color: --mutedcolor--; }
-
-  .modulex-s2-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; }
-  .modulex-s2-item { min-width: 0; }
-  /* İkon dairesi ve kart zemini OPAK karışım (transparent değil): üst üste yarı saydam katman kontrast ölçümünü bozar */
-  .modulex-s2-ikon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: color-mix(in srgb, --textcolor-- 14%, --bgcolor--); color: --textcolor--; margin-block-end: 12px; }
-  .modulex-s2-ikon .material-symbols-outlined { font-size: 26px; }
-  .modulex-s2-deger { display: flex; align-items: baseline; gap: 2px; font-size: clamp(2.2rem, 1.6rem + 2.4vw, 3.4rem); font-weight: 800; line-height: 1; color: --textcolor--; font-variant-numeric: tabular-nums; }
-  .modulex-s2-onek, .modulex-s2-sonek { font-size: 0.55em; font-weight: 700; }
-  .modulex-s2-etiket { margin: 10px 0 4px; font-size: 1.02rem; font-weight: 600; line-height: 1.3; color: --textcolor--; }
-  .modulex-s2-aciklama { margin: 0; font-size: 0.9rem; line-height: 1.5; color: --mutedcolor--; }
-
-  /* ── Varyant: serit (varsayılan) — ortalı, dikey ayraçlı sıra */
-  .modulex-s2-serit .modulex-s2-list { grid-template-columns: repeat(var(--s2-n), minmax(0, 1fr)); gap: 0; }
-  .modulex-s2-serit .modulex-s2-item { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 8px 20px; border-inline-start: 1px solid --bordercolor--; }
-  .modulex-s2-serit .modulex-s2-item:first-child { border-inline-start: 0; }
-  .modulex-s2-serit .modulex-s2-deger { justify-content: center; }
-  .modulex-s2-serit .modulex-s2-head { text-align: center; margin-inline: auto; }
-
-  /* ── Varyant: kartli — yarı saydam kartlar, ikon üstte, sola yaslı */
-  .modulex-s2-kartli .modulex-s2-list { grid-template-columns: repeat(var(--s2-n), minmax(0, 1fr)); gap: 16px; }
-  .modulex-s2-kartli .modulex-s2-item { padding: 24px; border-radius: --radius--; background: color-mix(in srgb, --textcolor-- 10%, --bgcolor--); border: 1px solid --bordercolor--; transition: transform 0.25s ease, background-color 0.25s ease; }
-  .modulex-s2-kartli .modulex-s2-item:hover { transform: translateY(-4px); background: color-mix(in srgb, --textcolor-- 16%, --bgcolor--); }
-  .modulex-s2-kartli .modulex-s2-ikon { background: color-mix(in srgb, --textcolor-- 22%, --bgcolor--); }
-  .modulex-s2-kartli .modulex-s2-aciklama { color: --textcolor--; } /* açık kart zemininde soluk ton 4,5'in altına iner */
-
-  /* ── Varyant: ayrik-cizgili — büyük ince rakam, kalın başlangıç çizgisi, üstte ince kural */
-  .modulex-s2-ayrik-cizgili .modulex-s2-list { grid-template-columns: repeat(var(--s2-n), minmax(0, 1fr)); gap: 32px; padding-block-start: 28px; border-top: 1px solid --bordercolor--; }
-  .modulex-s2-ayrik-cizgili .modulex-s2-item { padding-inline-start: 18px; border-inline-start: 4px solid --textcolor--; }
-  .modulex-s2-ayrik-cizgili .modulex-s2-ikon { display: none; }
-  .modulex-s2-ayrik-cizgili .modulex-s2-deger { font-weight: 300; font-size: clamp(2.6rem, 1.8rem + 3vw, 4.2rem); letter-spacing: -0.02em; }
-  .modulex-s2-ayrik-cizgili .modulex-s2-onek, .modulex-s2-ayrik-cizgili .modulex-s2-sonek { font-weight: 500; }
-
-  @media (max-width: 1024px) {
-    .modulex-s2-serit .modulex-s2-list, .modulex-s2-kartli .modulex-s2-list, .modulex-s2-ayrik-cizgili .modulex-s2-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .modulex-s2-serit .modulex-s2-list { gap: 24px 0; }
-    .modulex-s2-serit .modulex-s2-item:nth-child(odd) { border-inline-start: 0; }
-  }
+  .modulex-sayac-sekmeli-duzen { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: clamp(24px, 4vw, 56px); align-items: stretch; }
+  .modulex-sayac-sekmeli:not(.modulex-sayac-sekmeli--js) .modulex-sayac-sekmeli-sekmeler { display: none; }
+  .modulex-sayac-sekmeli:not(.modulex-sayac-sekmeli--js) .modulex-sayac-sekmeli-duzen { grid-template-columns: minmax(0, 1fr); }
+  .modulex-sayac-sekmeli-sekmeler { display: grid; align-content: start; gap: 6px; }
+  .modulex-sayac-sekmeli-sekme { display: flex; align-items: center; gap: 14px; width: 100%; padding: 16px 18px; border: 0; border-inline-start: 3px solid transparent; border-radius: 0 12px 12px 0; background: transparent; color: --muted--; font: inherit; font-size: 1.05rem; font-weight: 600; text-align: start; transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease; }
+  [dir="rtl"] .modulex-sayac-sekmeli-sekme { border-radius: 12px 0 0 12px; }
+  .modulex-sayac-sekmeli-sekme:hover { color: --text--; background: --kartBg--; }
+  .modulex-sayac-sekmeli-sekme[aria-selected="true"] { border-inline-start-color: --accent--; background: --kartBg--; color: --text--; }
+  .modulex-sayac-sekmeli-sekme-no { color: --accentInk--; font-size: 0.8rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .modulex-sayac-sekmeli-paneller { display: grid; gap: 16px; }
+  .modulex-sayac-sekmeli-panel { display: grid; align-content: center; gap: 12px; min-height: 320px; padding: clamp(28px, 5vw, 56px); border: 1px solid --cizgi--; border-radius: --yuvarlak--; background: --kartBg--; animation: modulex-sayac-sekmeli-gel 0.45s ease both; }
+  .modulex-sayac-sekmeli-ikon { color: --accentInk--; font-size: 44px; }
+  .modulex-sayac-sekmeli-sayi { font-size: clamp(3.4rem, 8vw, 6.4rem); font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -0.04em; line-height: 0.95; }
+  .modulex-sayac-sekmeli-ek { color: --accentInk--; font-size: 0.45em; }
+  .modulex-sayac-sekmeli-etiket { font-size: 1.3rem; font-weight: 700; }
+  .modulex-sayac-sekmeli-not { color: --muted--; font-size: 1.02rem; }
+  @keyframes modulex-sayac-sekmeli-gel { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
   @media (max-width: 768px) {
-    .modulex-s2 { padding-block: 36px; }
-    .modulex-s2-head { margin-block-end: 20px; }
-    .modulex-s2-serit .modulex-s2-item { padding: 8px 10px; }
-    .modulex-s2-ayrik-cizgili .modulex-s2-list { gap: 24px 16px; }
-    [class*="modulex"] { max-width: 100%; box-sizing: border-box; }
+    .modulex-sayac-sekmeli-duzen { grid-template-columns: minmax(0, 1fr); }
+    .modulex-sayac-sekmeli-sekmeler { grid-auto-flow: column; grid-auto-columns: max-content; overflow-x: auto; scrollbar-width: none; }
+    .modulex-sayac-sekmeli-sekme { border-inline-start: 0; border-block-end: 3px solid transparent; border-radius: 12px 12px 0 0; white-space: nowrap; padding: 12px 14px; }
+    [dir="rtl"] .modulex-sayac-sekmeli-sekme { border-radius: 12px 12px 0 0; }
+    .modulex-sayac-sekmeli-sekme[aria-selected="true"] { border-block-end-color: --accent--; }
+    .modulex-sayac-sekmeli-panel { min-height: 0; }
   }
-  @media (max-width: 400px) {
-    .modulex-s2-kartli .modulex-s2-list { grid-template-columns: 1fr; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sayac-sekmeli :is(.modulex-sayac-sekmeli-baslik, .modulex-sayac-sekmeli-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sayac-sekmeli-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-sayac-sekmeli { padding-inline: 16px; }
   }
   @media (prefers-reduced-motion: reduce) {
-    .modulex-s2 *, .modulex-s2 *::before, .modulex-s2 *::after { animation: none !important; transition: none !important; }
-    .modulex-s2-kartli .modulex-s2-item:hover { transform: none; }
+    .modulex-sayac-sekmeli *, .modulex-sayac-sekmeli *::before, .modulex-sayac-sekmeli *::after { animation: none !important; transition: none !important; }
   }
 </style>
-
 <script>
-  /* Sayaç: sunucu son değeri basar (JS yoksa görünür). JS + IO + hareket izni varsa 0'dan hedefe sayar (sayısal ara değer, uzamsal hareket değil).
-     Biçim: Intl.NumberFormat(dil + "-u-nu-latn") — Arapçada Latin hane (TASARIM § 10.4). */
-  (function () {
-    var kok = document.getElementById("s2-{{id}}");
-    if (!kok || kok.getAttribute("data-s2-hazir") === "1") { return; }
-    kok.setAttribute("data-s2-hazir", "1");
-    var azalt = false;
-    try { azalt = window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) { azalt = false; }
-    if (azalt || !("IntersectionObserver" in window) || !window.requestAnimationFrame) { return; }
-    var dil = (kok.getAttribute("data-s2-dil") || document.documentElement.getAttribute("lang") || "tr").split("-")[0];
-    var sure = parseInt(kok.getAttribute("data-s2-sure"), 10);
-    if (!isFinite(sure) || sure < 200) { sure = 1000; }
-    var bicim = null;
-    function yaz(n, ondalik) {
-      try {
-        if (!bicim) { bicim = {}; }
-        if (!bicim[ondalik]) { bicim[ondalik] = new Intl.NumberFormat(dil + "-u-nu-latn", { minimumFractionDigits: ondalik, maximumFractionDigits: ondalik }); }
-        return bicim[ondalik].format(n);
-      } catch (e) { return n.toFixed(ondalik); }
-    }
-    function say(el) {
-      var hedef = parseFloat(el.getAttribute("data-s2-hedef"));
-      var ondalik = parseInt(el.getAttribute("data-s2-ondalik"), 10) || 0;
-      if (!isFinite(hedef)) { return; }
-      var bas = null;
-      function adim(ts) {
-        if (bas === null) { bas = ts; }
-        var p = Math.min(1, (ts - bas) / sure);
-        var e = 1 - Math.pow(1 - p, 3);
-        el.textContent = yaz(hedef * e, ondalik);
-        if (p < 1) { window.requestAnimationFrame(adim); } else { el.textContent = yaz(hedef, ondalik); }
-      }
-      el.textContent = yaz(0, ondalik);
-      window.requestAnimationFrame(adim);
-    }
-    var sayilar = kok.querySelectorAll(".modulex-s2-sayi[data-s2-hedef]");
-    var io = new IntersectionObserver(function (girdiler) {
-      var j;
-      for (j = 0; j < girdiler.length; j++) {
-        if (girdiler[j].isIntersecting) { say(girdiler[j].target); io.unobserve(girdiler[j].target); }
-      }
-    }, { threshold: 0.4 });
-    var i;
-    for (i = 0; i < sayilar.length; i++) { io.observe(sayilar[i]); }
+  (() => {
+    const P = "modulex-sayac-sekmeli";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const sekme = (s, P) => {
+        const t = [...s.querySelectorAll("[role=tab]")];
+        const p = [...s.querySelectorAll("[role=tabpanel]")];
+        if (!t.length) return;
+        s.classList.add(P + "--js");
+        const sec = (i, odak) => {
+          t.forEach((x, j) => { x.setAttribute("aria-selected", String(i === j)); x.tabIndex = i === j ? 0 : -1; });
+          p.forEach((x, j) => { x.hidden = i !== j; });
+          if (odak) t[i].focus();
+        };
+        sec(0);
+        t.forEach((x, i) => {
+          x.addEventListener("click", () => sec(i));
+          x.addEventListener("keydown", (e) => {
+            const rtl = getComputedStyle(s).direction === "rtl";
+            const ileri = rtl ? "ArrowLeft" : "ArrowRight";
+            const geri = rtl ? "ArrowRight" : "ArrowLeft";
+            let n = -1;
+            if (e.key === ileri || e.key === "ArrowDown") n = (i + 1) % t.length;
+            else if (e.key === geri || e.key === "ArrowUp") n = (i - 1 + t.length) % t.length;
+            else if (e.key === "Home") n = 0;
+            else if (e.key === "End") n = t.length - 1;
+            if (n > -1) { e.preventDefault(); sec(n, true); }
+          });
+        });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      sekme(s, P, az);
+    });
   })();
 </script>
